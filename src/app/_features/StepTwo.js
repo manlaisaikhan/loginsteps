@@ -88,7 +88,7 @@ export const StepTwo = (props) => {
               inputOnChange={handleInputChange}
               inputValue={nameValues.email}
               inputName={"email"}
-              inputPlaceHolder={"Enter your email."}
+              inputPlaceHolder={"Placeholder"}
               error={errorState.email}
               errorMessage={"Please provide a valid email address."}
               type={"email"}
@@ -101,7 +101,7 @@ export const StepTwo = (props) => {
               inputOnChange={handleInputChange}
               inputValue={nameValues.phoneNumber}
               inputName={"phoneNumber"}
-              inputPlaceHolder={"Enter your phone number"}
+              inputPlaceHolder={"Placeholder"}
               error={errorState.phoneNumber}
               errorMessage={"Please enter a valid phone number."}
               type={"text"}
@@ -113,7 +113,7 @@ export const StepTwo = (props) => {
               inputOnChange={handleInputChange}
               inputValue={nameValues.password}
               inputName={"password"}
-              inputPlaceHolder={"Enter your password."}
+              inputPlaceHolder={"Placeholder"}
               error={errorState.password}
               errorMessage={
                 "Password must include letters, numbers and special characters."
@@ -126,21 +126,21 @@ export const StepTwo = (props) => {
               inputOnChange={handleInputChange}
               inputValue={nameValues.confirmPassword}
               inputName={"confirmPassword"}
-              inputPlaceHolder={"Confirm your password."}
+              inputPlaceHolder={"Placeholder"}
               error={errorState.confirmPassword}
               errorMessage={"Passwords do not match. Please try again."}
               type={"password"}
               // inputBorderColor={inputHasSpecialChac(nameValues.userName)}
             />
           </div>
-          <div className="backandnext">
-            <button className="backBtn" onClick={handlebackStep}>
-              &gt; Back
-            </button>
-            <button className="conBtn" onClick={conBtn}>
-              Continue 2/3 &gt;
-            </button>
-          </div>
+        </div>
+        <div className="backandnext">
+          <button className="backBtn" onClick={handlebackStep}>
+            &lt; Back
+          </button>
+          <button className="conBtn" onClick={conBtn}>
+            Continue 2/3 &gt;
+          </button>
         </div>
       </div>
     </div>

@@ -56,11 +56,11 @@ export const StepThree = (props) => {
 
   const newDate = new Date();
   const rightNowYear =
-    newDate.getFullYear() + (newDate.getMonth() / 12 + newDate.getDay() / 365);
+    newDate.getFullYear() + (newDate.getMonth() / 12 + newDate.getDate() / 365);
   const myBirthYear = new Date(date);
   const ageRightNow =
-    myBirthYear.getFullYear(date) +
-    (myBirthYear.getMonth(date) / 12 + myBirthYear.getDay(date) / 365);
+    myBirthYear.getFullYear() +
+    (myBirthYear.getMonth() / 12 + myBirthYear.getDate() / 365);
   const yearDiff = rightNowYear - ageRightNow;
   const errors = {};
 
@@ -117,7 +117,7 @@ export const StepThree = (props) => {
               <input
                 name="dateOfBirth"
                 type="date"
-                className="firstInput"
+                className={`firstInput ${errorState.date ? "input-error" : ""}`}
                 onChange={dateInput}
               ></input>
               {errorState.date && (
@@ -160,14 +160,14 @@ export const StepThree = (props) => {
             )}
           </div>
 
-          <div className="backandnext">
-            <button className="backBtn" onClick={handlebackStep}>
-              &gt; Back
-            </button>
-            <button className="conBtn" onClick={conBtn}>
-              Continue 3/3 &gt;
-            </button>
-          </div>
+        </div>
+        <div className="backandnext">
+          <button className="backBtn" onClick={handlebackStep}>
+            &lt; Back
+          </button>
+          <button className="conBtn" onClick={conBtn}>
+            Submit 3/3 &gt;
+          </button>
         </div>
       </div>
     </div>

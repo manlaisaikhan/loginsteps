@@ -94,6 +94,9 @@
   flex-direction: column;
   gap: 8px;
 }
+.input-error {
+  border-color: red;
+}
 .errorfirst {
   color: red;
   font-size: 14px;

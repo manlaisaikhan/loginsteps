@@ -91,7 +91,7 @@ export const StepOne = (props) => {
               inputOnChange={handleInputChange}
               inputValue={nameValues.firstName}
               inputName={"firstName"}
-              inputPlaceHolder={"Enter your first name."}
+              inputPlaceHolder={"Placeholder"}
               error={errorState.firstName}
               errorMessage={
                 "First name cannot contain special characters or numbers."
@@ -103,7 +103,7 @@ export const StepOne = (props) => {
               inputOnChange={handleInputChange}
               inputValue={nameValues.lastName}
               inputName={"lastName"}
-              inputPlaceHolder={"Enter your last name"}
+              inputPlaceHolder={"Placeholder"}
               error={errorState.lastName}
               errorMessage={
                 "Last name cannot contain special characters or numbers."
@@ -115,7 +115,7 @@ export const StepOne = (props) => {
               inputOnChange={handleInputChange}
               inputValue={nameValues.userName}
               inputName={"userName"}
-              inputPlaceHolder={"Enter your username"}
+              inputPlaceHolder={"Placeholder"}
               error={errorState.userName}
               errorMessage={
                 "This username is already taken. Please choose another one."

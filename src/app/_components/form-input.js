@@ -17,14 +17,11 @@ export const FormInput = (props) => {
       </p>
       <input
         type={type}
-        className="firstInput"
+        className={`firstInput ${error ? "input-error" : ""}`}
         placeholder={inputPlaceHolder}
         onChange={inputOnChange}
         name={inputName}
         value={inputValue}
-        // style={{
-        //   borderColor: { inputBorderColor } === false ? "red" : "blue",
-        // }}
       ></input>
       {error && <p className="errorfirst">{errorMessage}</p>}
     </div>
